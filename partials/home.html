@@ -1,0 +1,15 @@
+<div class="container" ng-controller="HomeController as home">
+  <h1> {{ home.title }} </h1>
+  <form ng-submit="home.advance()">
+    <!-- <label class="label-success">Enter a movie by title:</label> -->
+    <div class="input-group">
+      <span class="input-group-addon">
+        <span class="glyphicon glyphicon-search"></span>
+      </span>
+      <input class="form-control" type="text" name="movie" ng-model="home.movie" placeholder="find a movie" autofocus ng-keydown="advance()">
+    </div>
+    <br>
+    <!-- <a href="#/search/{{ home.movie }}"<button class="btn btn-success" type="submit" name="search">Find it!</button></a> -->
+    <div > {{ home.movie }} </div>
+  </form>
+</div>

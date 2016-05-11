@@ -1,0 +1,16 @@
+<div class="container" ng-controller="ShowController as show">
+  <h1> {{ show.movie }}</h1>
+  <div class="well row">
+    <h3> {{ show.thisMovie.Title }}</h3>
+    <img class="col-xs-2" ng-src="{{ show.thisMovie.Poster }}" alt="no poster provided" />
+    <header class="col-xs-10">
+          <div><b>Staring:</b> {{ show.thisMovie.Actors }}</div><br>
+          <div><i> {{ show.thisMovie.Plot }}</i> </div>
+          <h4>Additional Details:</h4>
+          <p> <b>Awards:</b> {{ show.thisMovie.Awards }} </p>
+          <p> <b>Rated:</b> {{ show.thisMovie.Rated }} </p>
+          <p> <b>Year:</b> {{ show.thisMovie.Year }} </p>
+          <p> <b>Rating:</b> {{ show.thisMovie.imdbRating }} </p>
+
+  </header>
+</div>

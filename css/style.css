@@ -1,0 +1,19 @@
+body {
+  background-color: #00008B;
+}
+
+.container {
+  background-color: #F0F8FF;
+  border-radius: 10px;
+  border: 3px solid gold;
+  box-shadow: 3px 3px 8px #AFEEEE;
+}
+ h1 {
+   text-align: center;
+ }
+#topTitle {
+  color: #AFEEEE;
+}
+.movieWell {
+  height: 200px;
+}
